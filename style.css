@@ -1,0 +1,232 @@
+:root {
+    --color1: #000000;
+    --color2: #B5C0D0;
+    --color3: #CCD3CA;
+    --color4: #F5E8DD;
+    --color5: #EED3D9;
+  }
+
+
+  .top-banner {
+    background-image: url('./assets/the-catfather.png');
+    background-size: cover; 
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 80vh
+}
+
+body {
+  background-color: var(--color1);
+}
+
+
+.top-bar-gradient {
+  width: 100%;
+  background: linear-gradient(to bottom, black, transparent);
+}
+
+.catflix-logo {
+  width: 100px;
+}
+
+.catfather-movie-name {
+  max-width: 500px;
+}
+
+@media (min-width: 100px) and (max-width: 525px) {
+  .catfather-movie-name {
+    max-width: 200px;
+  }
+
+  .top-banner {
+    height: 65vh
+}
+
+}
+
+
+@media (max-width: 575.98px) {
+  body > div.top-banner > div > div
+  {
+    margin-top: -180px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body > div.top-banner > div > div
+  {
+    margin-top: -100px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 4000px) {
+  body > div.top-banner > div > div
+  {
+    margin-top: 150px;
+  }
+}
+
+body > div.top-banner > header > div > div > ul
+{
+  font-size: 0.8rem;
+  padding-left: 1rem;
+}
+
+.search-click {
+  background-image: url('./assets/search.svg');
+background-size: 30px;
+background-repeat: no-repeat;
+  border: 1px solid #919191;
+  outline: none;
+  background-size: 20px;
+  background-position: 9px;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  padding: 19px;
+  transition: all 0.5s;
+}
+.search-click:focus {
+  width: 250px;
+  padding-left: 50px;
+}
+.search-click {
+  position: relative;
+  overflow: hidden;
+  height: 30px;
+}
+.search-click input {
+  background: transparent;
+  border: 1px solid #ccc;
+  outline: none;
+  position: absolute;
+  width: 300px;
+  height: 30px;
+  left: 0%;
+  padding: 10px;
+}
+
+body > footer > div > div  {
+  font-size: 13px;
+  line-height: 35px;
+}
+
+body > footer > div > div > div.col-12.mt-5.mb-2 > div > section > a {
+padding-right: 30px;
+padding-left: 0px;
+border: 0px;
+}
+
+.section-title > h2 {
+  z-index: 9999;
+}
+
+
+
+
+/* Container for all grid items */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  padding: 0 15px;
+  margin-top: 20px;
+}
+
+
+.grid-item {
+  position: relative;  
+  overflow: visible; 
+}
+
+
+.carousel-itemx {
+  position: relative; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible; 
+}
+
+
+.carousel-imgx {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+
+.carousel-cardx {
+  position: absolute; 
+  top: -30px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18rem;
+  visibility: hidden; 
+  z-index: 1;
+  pointer-events: none; 
+  transition: visibility 0.3s ease, top 0.3s ease;
+}
+
+
+.grid-item:hover .carousel-cardx {
+  visibility: visible; 
+  top: -60px; 
+  pointer-events: auto; 
+}
+
+
+.cardx {
+  width: 100%;
+  height: 100%;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+
+.card-img-topx {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.card-bodyx {
+  padding: 10px;
+  background-color: rgb(23, 22, 22); 
+  color: white;
+  border-radius: 8px;
+}
+
+.iconito,
+.iconitox {
+  color: var(--color3);
+  font-size: 1.8rem;
+  padding-right: 10px;
+}
+
+.iconitox {
+  float: right;
+}
+
+.episodes {
+  padding: 0px 5px;
+  margin-top: 2px;
+}
+
+.corazon {
+  color: red;
+}
+
+.most-liked p {
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.most-liked {
+  padding: 10px 0px 0px 0px;
+}
